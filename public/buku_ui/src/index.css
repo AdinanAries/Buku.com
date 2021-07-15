@@ -15,6 +15,10 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
+}
+a {
+  text-decoration: none;
 }
 body {
   background-color: #cfd7df;
@@ -24,7 +28,7 @@ header {
   flex-direction: row;
   justify-content: center;
   position: fixed;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
   top: 0;
   left: 0;
   width: 100%;
@@ -38,7 +42,6 @@ header {
   height: 100vh;
 }
 .hero-section-inner {
-  
   background-color: #212c2c;
   padding: 0 10px;
   height: 100%;
@@ -46,6 +49,119 @@ header {
   padding-top: 5px;
   padding-bottom: 30px;
 }
-.site-news-section{
+.top-border {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  display: block;
+  border-bottom: #374949 1px solid;
+  max-width: 700px;
+}
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  font-family: serif;
+  padding: 10px 0;
+}
+.site-news-section {
   min-height: 500px;
+}
+#popular-services-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.each-popular-service img {
+  width: 40px;
+  height: 40px;
+}
+.each-popular-service .img-p{
+  text-align: center;
+}
+.each-popular-service .name-p{
+  text-align: center;
+  color: #ccc; font-size: 12px;
+}
+.homepage-favorite-services-list {
+  width: 85%;
+  margin: auto;
+}
+.homepage-each-favorite-service {
+  min-height: 120px;
+  background-color: #334d81;
+  border-top: 10px solid #ffe96b;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.5),
+    0px 0px 2.9px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 5px;
+  text-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.5),
+    0px 0px 2.9px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(116, 115, 15, 0.8)),
+    url("./images/DocAppt.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.homepage-each-favorite-service-image {
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.5),
+    0px 0px 2.9px rgba(0, 0, 0, 0.5);
+  width: 70px;
+  height: 70px;
+}
+.homepage-each-favorite-service-image img {
+  width: 70px;
+  height: auto;
+  min-height: 70px;
+}
+.homepage-each-favorite-service-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.homepage-each-favorite-service-name {
+  color: #fefde5;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.homepage-each-favorite-service-rating {
+  font-size: 20px;
+  max-width: 200px;
+  color: #37a0f5;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.homepage-each-favorite-service-rating-span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.homepage-each-favorite-service-rating-span i {
+  color: #4ed164;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.homepage-each-favorite-service-rating-span span {
+  color: white;
+  font-size: 10px;
+}
+.homepage-each-favorite-service-bizname {
+  text-align: center;
+  color: #ffe96b;
+  font-weight: bolder;
+  margin-bottom: 3px;
+}
+.homepage-each-favorite-service-servicetype {
+  text-align: center;
+  color: #ccc;
+  margin-top: -3px;
 }
