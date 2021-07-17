@@ -20,15 +20,15 @@ code {
 a {
   text-decoration: none;
 }
+input:focus {
+  outline: none;
+}
 body {
   background-color: #cfd7df;
 }
 header {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
   position: fixed;
-  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
   top: 0;
   left: 0;
   width: 100%;
@@ -36,10 +36,68 @@ header {
   background-color: #212c2c;
   z-index: 110;
 }
+.logo{
+  font-family: Impact;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 20px;
+  /*border-bottom: 3px solid rgb(255, 110, 25);
+  border-top: 3px solid rgb(255, 110, 25);*/
+}
+.logosB{
+  font-family: Impact;
+  color:rgb(255, 110, 25) !important;
+  font-size: 30px !important;
+  font-weight: initial !important;
+}
+.logo span{
+  font-size: 16px;
+  color:rgb(255, 188, 149);
+  font-weight: bolder;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+  max-width: 1600px;
+  margin: auto;
+}
+.wrapper{
+  max-width: 1600px;
+  margin: auto;
+}
+.each-header-section{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-main-nav ul li{
+  display: inline;
+  margin-left: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: white; 
+  font-weight: bolder;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.header-main-nav ul li i{
+  color:rgb(87, 221, 255);
+  margin-right: 5px;
+  font-size: 15px;
+}
+.header-main-nav ul li.active i{
+  color:rgb(255, 110, 25);
+}
+.header-main-nav ul li.active{
+  color:rgb(255, 188, 149);
+}
 .hero-section {
   padding-top: 60px;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 .hero-section-inner {
   background-color: #212c2c;
@@ -62,6 +120,7 @@ header {
   text-align: center;
   font-size: 19px;
   font-family: serif;
+  font-family: 'Courgette';
   padding: 10px 0;
 }
 .site-news-section {
@@ -102,7 +161,7 @@ header {
   text-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.5),
     0px 0px 2.9px rgba(0, 0, 0, 0.5);
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(116, 115, 15, 0.8)),
-    url("./images/DocAppt.jpg");
+    url("./images/stetoscopeBg.jpg");
   background-size: cover;
   background-position: center;
   padding: 30px 10px;
@@ -164,4 +223,14 @@ header {
   text-align: center;
   color: #ccc;
   margin-top: -3px;
+}
+.about-buku-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.eachCSecFlex{
+  width: 33%;
+  text-align: center;
 }
