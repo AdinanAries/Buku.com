@@ -59,8 +59,11 @@ function NewsSection(){
                         </div>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 20, overflow: "hidden", boxShadow: "1px 2px 3px rgba(0,0,0,0.3)", marginBottom: 5}}>
+                    <div style={{width: "50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url("+newsImg+")", height: "100%", minHeight: 350, backgroundColor: "grey",
+                         borderRadius: 50, marginTop: 10, marginBottom: 10, borderTopLeftRadius: 0, borderBottomLeftRadius: 0, borderLeft: "5px solid orange"           }}>
+                        </div>
                         <div style={{width: "50%"}}>
-                            <div style={{padding: 20, borderLeft: "20px solid orange", minHeight: 370,}}>
+                            <div style={{padding: 20, borderRight: "20px solid orange", minHeight: 370,}}>
                                 <h1 style={{color: "skyblue", fontSize: 18, marginBottom: "10px", fontFamily: 'Courgette'}}>
                                     Buku Hair Salon
                                 </h1>
@@ -103,9 +106,6 @@ function NewsSection(){
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div style={{width: "50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url("+newsImg+")", height: "100%", minHeight: 350, backgroundColor: "grey",
-                         borderRadius: 50, marginTop: 10, marginBottom: 10, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderRight: "5px solid orange",}}>
                         </div>
                     </div>
                     

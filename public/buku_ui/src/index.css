@@ -25,6 +25,8 @@ input:focus {
 }
 body {
   background-color: #cfd7df;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 header {
   flex-direction: row;
