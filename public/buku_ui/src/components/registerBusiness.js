@@ -52,7 +52,7 @@ function RegisterBusiness(){
                                 </div>
                             </div>
                         </div>
-                        <div style={{backgroundColor: "orange", borderBottomRightRadius: 100, padding: 10, textAlign: "center", fontWeight: "bolder", color: "rgb(255,255,0)"}}>
+                        <div style={{backgroundColor: "orange", borderBottomRightRadius: 100, padding: 10, textAlign: "center", fontWeight: "bolder", color: "green"}}>
                             Submit
                         </div>
                     </div>    

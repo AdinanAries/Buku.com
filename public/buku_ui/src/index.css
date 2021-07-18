@@ -38,6 +38,10 @@ header {
   background-color: #212c2c;
   z-index: 110;
 }
+footer{
+  background-color: #212c2c;
+  min-height: 200px;
+}
 .logo{
   font-family: Impact;
   letter-spacing: 1px;

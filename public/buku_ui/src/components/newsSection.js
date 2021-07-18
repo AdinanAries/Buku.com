@@ -5,7 +5,7 @@ function NewsSection(){
     return (
         <div className="site-news-section">
             <div className="wrapper">
-                <h1 className="section-title" style={{color: "rgb(23,122,122)", marginTop: "10px"}} >News Updates</h1>
+                <h1 className="section-title" style={{color: "rgb(23,122,122)", marginTop: "30px"}} >News Updates</h1>
                 <p style={{textAlign: "center", fontSize: 14, color: "rgb(23,99,99)"}}>What's going on with businesses in your area</p>
                 <div style={{marginTop: 20, padding: "0 10px"}}>
                     <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 20, overflow: "hidden", boxShadow: "1px 2px 3px rgba(0,0,0,0.3)", marginBottom: 5}}>
