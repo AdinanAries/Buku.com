@@ -18,7 +18,7 @@ function AboutBuku(){
                 <div style={{margin: "auto", width: "100%", maxWidth: "400px", height: "300px", 
                         backgroundImage: "url('"+BarbAppt+"')", backgroundSize: "cover", backgroundPosition: "right",
                         display: "flex", justifyContent: "flex-end", flexDirection: "column"}}>
-                    <p style={{backgroundColor: "rgba(0,0,0, 0.3)", color: "#ffe96b", padding: "5px"}}>Our recommendations algorithms make it easier for you to find the best barber shops in town</p>
+                    <p style={{backgroundColor: "rgba(0,0,0, 0.3)", color: "#ffe96b", padding: "5px"}}>Our recommendations algorithms make it easier for you to find the best barber in town</p>
                 </div>
             </div>
             <div class='eachCSecFlex marginUp20'>
@@ -26,7 +26,7 @@ function AboutBuku(){
                 <div style={{margin: "auto", width: "100%", maxWidth: "400px", height: "300px", 
                         backgroundImage: "url('"+SpaAppt+"')", backgroundSize: "cover", backgroundPosition: "right",
                         display: "flex", justifyContent: "flex-end", flexDirection: "column"}}>
-                    <p style={{backgroundColor: "rgba(0,0,0, 0.3)", color: "#ffe96b", padding: "5px"}}>No more waiting on a line. Your service provider has a queue. Find your spot here.</p>
+                    <p style={{backgroundColor: "rgba(0,0,0, 0.3)", color: "#ffe96b", padding: "5px"}}>No more waiting on a line. Your service provider has a Buku. Find your spot here.</p>
                 </div>
             </div>
         </div>

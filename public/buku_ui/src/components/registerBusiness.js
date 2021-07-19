@@ -18,7 +18,7 @@ function RegisterBusiness(){
                                     <div style={{padding: "20px", paddingTop: 0, width: "fit-content", margin: "auto"}}>
                                         <div style={{margin: "auto", width: "100%", maxWidth: "300px", padding: "10px", paddingTop: "20px",
                                                 display: "flex", flexDirection: "column"}}>
-                                            <h1 style={{color: "rgb(23,122,122)", fontSize: 14, textAlign: "center", marginBottom: 10, color: "white"}} >Expand your market reach</h1>
+                                            <h1 style={{color: "rgb(23,122,122)", fontSize: 14, textAlign: "center", marginBottom: 10, color: "white"}} >Extend your market reach</h1>
                                             <p style={{textAlign: "center"}}><img src={lineCusts}  style={{width: "80px", height: "80px"}}/></p>
                                             <p style={{color: "white", padding: "5px"}}>Our marketing team will constantly be reaching out to customers in order to get you more business</p>
                                         </div>

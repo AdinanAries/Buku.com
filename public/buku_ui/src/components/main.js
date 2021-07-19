@@ -4,7 +4,7 @@ import RegisterBusiness from './registerBusiness';
 
 function Main(){
     return(
-        <main>
+        <main style={{display: "none"}}>
             <Hero />
             <RegisterBusiness />
             <NewsSection />

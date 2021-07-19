@@ -131,6 +131,9 @@ footer{
 }
 .site-news-section {
   min-height: 500px;
+  background-color: #212c2c;
+  margin: 20px 0;
+  padding: 1px 0;
 }
 #popular-services-section {
   display: flex;
@@ -239,4 +242,9 @@ footer{
 .eachCSecFlex{
   width: 33%;
   text-align: center;
+}
+.search-results-page{
+  padding-top: 80px;
+  padding-bottom: 30px;
+  background-color: #212c2c;
 }
