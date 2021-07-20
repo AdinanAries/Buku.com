@@ -18,7 +18,7 @@ function Header(){
                         <li><i className="fa fa-sign-in"></i>Login</li>
                     </ul>
                 </div>
-                <div className="each-header-section">
+                <div className="each-header-section header-menu-new-button">
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <p><i style={{fontSize: "22px", color: "aqua"}} className="fa fa-newspaper-o"></i></p>
                         <p style={{fontSize: "11px", color: "white"}}>News</p>

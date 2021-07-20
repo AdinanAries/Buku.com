@@ -1,4 +1,3 @@
-import newsImg from "../images/11.jpg";
 import rvwImg from "../images/ProfilePic9.jpg"
 
 function NewsSection(){
@@ -7,7 +6,7 @@ function NewsSection(){
             <div className="wrapper">
                 <h1 className="section-title" style={{color: "orange", marginTop: "30px"}} >News Updates</h1>
                 <p style={{textAlign: "center", fontSize: 14, color: "goldenrod", marginBottom: "30px"}}>What's going on with businesses in your area</p>
-                <div id="home-page-news-list" style={{margin: "30px 40px", marginTop: 20}}>
+                <div id="home-page-news-list">
                     {/*
                     <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 20, overflow: "hidden", marginBottom: 5}}>
                         <div style={{width: "50%"}}>
@@ -60,12 +59,11 @@ function NewsSection(){
                         </div>
                     </div>
                     */}
-                    <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 10, overflow: "hidden"}}>
-                        <div style={{width: "50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url("+newsImg+")", height: "100%", minHeight: 350,
-                            borderRadius: 50, borderTopLeftRadius: 0, borderBottomLeftRadius: 0, marginTop: 10, marginBottom: 10, borderLeft: "10px solid orange"}}>
+                    <div className="each-homepage-news-item">
+                        <div className="each-homepage-news-item-each-inner-section each-homepage-news-item-each-inner-section-img">
                         </div>
-                        <div style={{width: "50%"}}>
-                            <div style={{padding: 20, borderRight: "10px solid orange", minHeight: 370,}}>
+                        <div className="each-homepage-news-item-each-inner-section">
+                            <div className="each-homepage-news-item-each-inner-section-info">
                                 <h1 style={{color: "skyblue", fontSize: 18, marginBottom: "10px", fontFamily: 'Courgette'}}>
                                     Buku Hair Salon
                                 </h1>
@@ -110,12 +108,11 @@ function NewsSection(){
                             </div>
                         </div>
                     </div>
-                    <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 10, overflow: "hidden"}}>
-                        <div style={{width: "50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url("+newsImg+")", height: "100%", minHeight: 350,
-                            borderRadius: 50, borderTopLeftRadius: 0, borderBottomLeftRadius: 0, marginTop: 10, marginBottom: 10, borderLeft: "10px solid orange"}}>
+                    <div className="each-homepage-news-item">
+                        <div className="each-homepage-news-item-each-inner-section each-homepage-news-item-each-inner-section-img">
                         </div>
-                        <div style={{width: "50%"}}>
-                            <div style={{padding: 20, borderRight: "10px solid orange", minHeight: 370,}}>
+                        <div className="each-homepage-news-item-each-inner-section">
+                            <div className="each-homepage-news-item-each-inner-section-info">
                                 <h1 style={{color: "skyblue", fontSize: 18, marginBottom: "10px", fontFamily: 'Courgette'}}>
                                     Buku Hair Salon
                                 </h1>
@@ -160,12 +157,11 @@ function NewsSection(){
                             </div>
                         </div>
                     </div>
-                    <div style={{display: "flex", flexDirection: "row", backgroundColor: "#212c2c", borderRadius: 10, overflow: "hidden"}}>
-                        <div style={{width: "50%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url("+newsImg+")", height: "100%", minHeight: 350,
-                            borderRadius: 50, borderTopLeftRadius: 0, borderBottomLeftRadius: 0, marginTop: 10, marginBottom: 10, borderLeft: "10px solid orange"}}>
+                    <div className="each-homepage-news-item">
+                        <div className="each-homepage-news-item-each-inner-section each-homepage-news-item-each-inner-section-img">
                         </div>
-                        <div style={{width: "50%"}}>
-                            <div style={{padding: 20, borderRight: "10px solid orange", minHeight: 370,}}>
+                        <div className="each-homepage-news-item-each-inner-section">
+                            <div className="each-homepage-news-item-each-inner-section-info">
                                 <h1 style={{color: "skyblue", fontSize: 18, marginBottom: "10px", fontFamily: 'Courgette'}}>
                                     Buku Hair Salon
                                 </h1>
@@ -210,6 +206,7 @@ function NewsSection(){
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
