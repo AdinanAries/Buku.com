@@ -2,8 +2,8 @@ function Footer(){
     return (
         <footer>
             <div className="wrapper">
-                <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "40px 10px"}}>
-                    <div style={{width: "33%"}}>
+                <div className="footer-items-container">
+                    <div className="footer-content-section">
                         <p style={{textAlign: "center", color: "gold", fontSize: 13, fontWeight: "bolder", marginBottom: 10}}>Office</p>
                         <div>
                         <p style={{padding: 5, fontSize: 14, fontWeight: "bolder", marginTop: 10, textAlign: "justify", color: "aqua", textAlign: "center"}}>
@@ -34,7 +34,7 @@ function Footer(){
                             
                         </div>
                     </div>
-                    <div style={{width: "33%"}}>
+                    <div className="footer-content-section">
                         <p style={{textAlign: "center", color: "gold", fontSize: 13, fontWeight: "bolder", marginBottom: 10}}>About Us</p>
                         <div>
                             <p style={{color: "white", fontSize: 13}}>
@@ -57,7 +57,7 @@ function Footer(){
                         </ul>
                         </div>
                     </div>
-                    <div style={{width: "33%"}}>
+                    <div className="footer-content-section">
                         <p style={{textAlign: "center", color: "gold", fontSize: 13, fontWeight: "bolder", marginBottom: 10}}>Support</p>
                         <div>
                         <ul>

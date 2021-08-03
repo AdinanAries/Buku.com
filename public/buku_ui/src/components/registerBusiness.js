@@ -64,7 +64,7 @@ function RegisterBusiness(){
                         <div style={{padding: "20px", paddingTop: 0, width: "fit-content", margin: "auto"}}>
                             <div style={{margin: "auto", width: "100%", maxWidth: "300px", padding: "10px", paddingTop: "20px",
                                     display: "flex", flexDirection: "column"}}>
-                                <h1 style={{color: "rgb(23,122,122)", fontSize: 14, textAlign: "center", marginBottom: 10, color: "#17a0f5"}} >Fast growing community</h1>
+                                <h1 style={{color: "lightgreen", fontSize: 14, textAlign: "center", marginBottom: 10}} >Fast growing community</h1>
                                 <p style={{textAlign: "center"}}><img src={bizGroup}  style={{width: "80px", height: "80px"}}/></p>
                                 <p style={{color: "#37a0f5", padding: "5px"}}>More and more businesses are signing up on our platform everyday</p>
                             </div>
@@ -73,7 +73,7 @@ function RegisterBusiness(){
                             <div style={{padding: "20px", paddingTop: 0, width: "fit-content", margin: "auto"}}>
                                 <div style={{margin: "auto", width: "100%", maxWidth: "300px", padding: "10px", paddingTop: "20px",
                                         display: "flex", flexDirection: "column"}}>
-                                    <h1 style={{color: "rgb(23,122,122)", fontSize: 14, textAlign: "center", marginBottom: 10, color: "#17a0f5"}} >Your reviews make a difference</h1>
+                                    <h1 style={{color: "lightgreen", fontSize: 14, textAlign: "center", marginBottom: 10}} >Your reviews make a difference</h1>
                                     <p style={{textAlign: "center"}}><img src={rvwImg}  style={{width: "80px", height: "80px"}}/></p>
                                     <p style={{color: "#37a0f5", padding: "5px"}}>Always feel free to tell us how you were served. You help us keep the platform clean</p>
                                 </div>
@@ -81,7 +81,7 @@ function RegisterBusiness(){
                             <div style={{padding: "20px", paddingTop: 0, width: "fit-content", margin: "auto"}}>
                                 <div style={{margin: "auto", width: "100%", maxWidth: "300px", padding: "10px", paddingTop: "20px",
                                         display: "flex", flexDirection: "column"}}>
-                                    <h1 style={{color: "rgb(23,122,122)", fontSize: 14, textAlign: "center", marginBottom: 10, color: "#17a0f5"}} >Our businesses keep you posted</h1>
+                                    <h1 style={{color: "lightgreen", fontSize: 14, textAlign: "center", marginBottom: 10}} >Our businesses keep you posted</h1>
                                     <p style={{textAlign: "center"}}><img src={newsImg}  style={{width: "80px", height: "80px"}}/></p>
                                     <p style={{color: "#37a0f5", padding: "5px"}}>Our integrated news feed feature lets businesses post regular news updates to keep you informed</p>
                                 </div>
