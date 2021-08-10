@@ -1,12 +1,100 @@
-import profilePic from "../images/profile_avatar.png"
+import profilePic from "../images/profile_avatar.png";
 
-import { general_slideUp, general_slideDown, toggle_show_app_settings_page, toggle_show_edit_user_profile_page } from "./helperFunctions";
+import { general_slideUp, general_slideDown, show_add_business_addreview_page, toggle_show_history_page, toggle_show_app_settings_page, toggle_show_edit_user_profile_page, toggle_show_login_on_user_account_page, toggle_show_signup_on_user_account_page, toggle_show_user_infor_pane_on_user_account_page } from "./helperFunctions";
+import { login } from "../API/ajax_api_calls";
+
+/*{
+  "email": "kk@live.com",
+  "password": "1111111"
+}*/
+async function run_login(){
+    let res = await login("kk@live.com","1111111");
+    console.log(res);
+}
+
+run_login();
 
 function UserAccountContainer(){
     return (
         <div id="user_account_page">
             <div className="wrapper">
-                <div className="user-account-page-main-container">
+                <div id="user_account_page_login_signup_forms_pane" className="user-account-login-signup-forms-main-container">
+                    <div id="user_account_page_login_form_pane" style={{padding: 10, paddingTop: 20}}>
+                        <p style={{color: "skyblue", textAlign: "center", margin: "10px 0", fontWeight: "bolder"}}>Login</p>
+                        <p style={{color: "white", textAlign: "center", marginBottom: 20, fontSize: 13}}>Add your login information below</p>
+                        <div style={{maxWidth: 700, margin: "auto"}}>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-envelope"></i>Email</p>
+                                <input type="email" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter your email here" />
+                            </div>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-key"></i>Password</p>
+                                <input type="password" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter your password here" />
+                            </div>
+                            <div onClick={toggle_show_user_infor_pane_on_user_account_page} style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
+                                Login
+                            </div>
+                        </div>
+                        <p onClick={toggle_show_signup_on_user_account_page} style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
+                            Dont have an account?
+                            <span style={{color: "yellow", fontSize: 14, marginLeft: 5}}>Signup here</span></p>
+                    </div>
+                    <div id="user_account_page_signup_form_pane" style={{display: "none", padding: 10, paddingTop: 20}}>
+                        <p style={{color: "skyblue", textAlign: "center", margin: "10px 0", fontWeight: "bolder"}}>Signup</p>
+                        <p style={{color: "white", textAlign: "center", marginBottom: 20, fontSize: 13}}>Add your information below</p>
+                        <div style={{maxWidth: 700, margin: "auto"}}>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-user"></i>Full Name</p>
+                                <input style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter your full name here" />
+                            </div>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, fontSize: 18, color: "green"}} className="fa fa-mobile"></i>Mobile</p>
+                                <div style={{display: "flex", flexDirection: "row !important", justifyContent: "space-between", marginTop: 10}}>
+                                    <div>
+                                        <select style={{backgroundColor: "white",padding: 10, width: 80, border: "none", outline: "none"}}>
+                                            <option>
+                                                +1
+                                            </option>
+                                            <option>
+                                                +255
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div style={{width: "calc(100% - 90px)"}}>
+                                        <input type="number" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter mobile number here" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-envelope"></i>Email</p>
+                                <input type="email" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter your email here" />
+                            </div>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-key"></i>Password</p>
+                                <input type="password" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please enter new password here" />
+                            </div>
+                            <div style={{background: "white", padding: 10, borderRadius: 10, boxShadow: "1px 2px 3px rgba(0,0,0,0.5)", marginBottom: 10}}>
+                                <p style={{paddingBottom: 10, borderBottom: "1px solid rgba(0,0,0,0.2)", fontSize: 14, fontWeight: "bolder"}}>
+                                    <i style={{marginRight: 5, color: "green"}} className="fa fa-key"></i>Confirm Password</p>
+                                <input type="password" style={{width: "100%", padding: 10, fontSize: 14, border: "none"}} placeholder="please confirm password here" />
+                            </div>
+                            <div onClick={toggle_show_user_infor_pane_on_user_account_page} style={{cursor: "pointer", padding: 10, textAlign: "center", color: "orange", backgroundColor: "rgba(255,255,0,0.1)", fontSize: 13, fontWeight: "bolder", borderRadius: 10, border: "1px solid rgba(255,255,0,0.3)"}}>
+                                Signup
+                            </div>
+                        </div>
+                        <p onClick={toggle_show_login_on_user_account_page} style={{margin: "20px 0", color: "white", fontSize: 14, textAlign: "center", cursor: "pointer"}}>
+                            Already have an account?
+                            <span style={{color: "yellow", fontSize: 14, marginLeft: 5}}>Login here</span></p>
+                    </div>
+                
+                </div>
+                <div id="user_account_page_user_info_pane" style={{display: "none"}} className="user-account-page-main-container">
                     <div className="user-account-page-main-sections-each" >
                         <div style={{padding: 10, display: "flex", flexDirection: "row !important", justifyContent: "space-between"}}>
                             <div style={{width: 70, height: 70, overflow: "hidden", borderRadius: "100%", backgroundColor: "rgba(0,0,0,0.2)"}}>
@@ -158,8 +246,8 @@ function UserAccountContainer(){
                                             +1 (732) 799 9546</p>
                                     </div>
                                 </div>
-                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between", position: "relative"}}>
+                                    <div onClick={show_add_business_addreview_page} style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
                                         Add Review
                                     </div>
@@ -218,8 +306,8 @@ function UserAccountContainer(){
                                             +1 (732) 799 9546</p>
                                     </div>
                                 </div>
-                                <div style={{display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
-                                    <div style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                                <div style={{position: "relative", display: "flex", margin: 5, marginTop: 15, flexDirection: "row !important", justifyContent: "space-between"}}>
+                                    <div onClick={show_add_business_addreview_page} style={{width: "66.5%", textAlign: "center", color: "white", padding: 10, border: "1px solid rgba(255,255,255,0.2)", backgroundColor: "rgba(145,12,122,0.3)", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                                         <i style={{marginRight: 5, color: "gold"}} className="fa fa-star"></i>
                                         Add Review
                                     </div>
@@ -246,7 +334,8 @@ function UserAccountContainer(){
                                 </div>
                             </div>
                         </div>
-                        <div style={{marginTop: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
+                        
+                        <div onClick={toggle_show_history_page} style={{marginTop: 10, backgroundColor: "rgba(22,22,98,0.3)", border: "1px solid rgba(55,155,73,0.3)", padding: 10, textAlign: "center", color: "white", fontSize: 14, cursor: "pointer", borderRadius: 4}}>
                             see all history
                         </div>
                     </div>
